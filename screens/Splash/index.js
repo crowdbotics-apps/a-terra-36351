@@ -1,8 +1,11 @@
+import { Pressable } from "react-native";
 import { Text } from "react-native";
 import React from "react";
 import { View, ImageBackground } from "react-native";
 
-const Splash = () => {
+const Splash = ({
+  navigation
+}) => {
   return <View style={{
     padding: 10,
     position: 'relative',
@@ -13,18 +16,20 @@ const Splash = () => {
       justifyContent: "center"
     }}>
         </ImageBackground>
-      <View style={{
-      left: 39,
-      top: 243,
-      position: "absolute",
-      height: 45,
-      width: 132,
-      backgroundColor: "#181b3b",
-      borderRadius: 13,
-      color: "#777777",
-      borderColor: "#ffffff",
-      borderWidth: 1
-    }}></View><Text style={{
+      <Pressable style={{
+      position: 'absolute'
+    }} onPress={() => navigation.navigate("Signupscreen")}><View style={{
+        left: 28,
+        top: 234,
+        position: "absolute",
+        height: 45,
+        width: 132,
+        backgroundColor: "#181b3b",
+        borderRadius: 13,
+        color: "#777777",
+        borderColor: "#ffffff",
+        borderWidth: 1
+      }}></View></Pressable><Text style={{
       left: 86,
       top: 256,
       position: "absolute",
@@ -34,20 +39,24 @@ const Splash = () => {
       fontSize: 14,
       borderRadius: 0,
       color: "#ffffff"
-    }}>Sign in</Text><View style={{
-      left: 39,
-      top: 292,
-      position: "absolute",
-      height: 45,
-      width: 132,
-      backgroundColor: "#181b3b",
-      borderRadius: 13,
-      color: "#777777",
-      borderColor: "#ffffff",
-      borderWidth: 1
-    }}></View><Text style={{
-      left: 79,
-      top: 306,
+    }}>Sign in</Text><Pressable style={{
+      position: "absolute"
+    }} onPress={({
+      navigation
+    }) => navigation.navigate("Signupscreen")}><View style={{
+        left: 24,
+        top: 286,
+        position: "absolute",
+        height: 45,
+        width: 132,
+        backgroundColor: "#212447",
+        borderRadius: 13,
+        color: "#777777",
+        borderColor: "#ffffff",
+        borderWidth: 1
+      }}></View></Pressable><Text style={{
+      left: 82,
+      top: 308,
       position: "absolute",
       width: 76,
       height: 32,
