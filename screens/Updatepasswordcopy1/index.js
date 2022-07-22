@@ -8,28 +8,31 @@ const pressed = () => {
 const ForgotPassword = () => {
   return <View style={styles.container}>
       <View style={styles.topHead}>
-        <Text style={styles.mainHeading}>{"\n"}Update Password</Text>
+        <Text style={styles.mainHeading}>{"\n"}Forgot Password</Text>
       </View>
 
       <View style={styles.inputSection}>
       <View style={styles.newPassword}>
-        <Text style={styles.newpasswordText}>Set new password for your account.</Text>
+        <Text style={styles.newpasswordText}>Enter your email for password reset.</Text>
       </View>
-      <View style={styles.passwordInput}>
-        <Text style={styles.newpasswordLabel}>Password</Text>
+      <View style={{
+        top: -1,
+        left: -1
+      }}>
+        <Text style={{
+          fontWeight: 100
+        }}>Email</Text>
         <Input placeholder="Enter"></Input>
       </View>
-      <View style={styles.confirmInput}>
-        <Text style={styles.newpasswordLabel}>Confirm Password</Text>
-        <Input placeholder="Enter"></Input>
+      
       </View>
-      </View>
-      <View style={styles.resetButton}>
+      <View style={{
+      left: 0,
+      top: 0
+    }}>
         <Button onPress={pressed} style={styles.resetBtn}>Reset password</Button>
       </View>
-      <View style={styles.back}>
-        <Text style={styles.backText}>Back</Text>
-      </View>
+      
     </View>;
 };
 
@@ -126,7 +129,7 @@ const Input = props => {
 const inputStyles = StyleSheet.create({
   input: {
     backgroundColor: "#fff",
-    height: 53,
+    height: 40,
     borderColor: "#C4C4C4",
     color: "#000",
     borderRadius: 10,
