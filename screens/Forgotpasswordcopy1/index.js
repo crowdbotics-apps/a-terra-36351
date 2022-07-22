@@ -8,12 +8,12 @@ const pressed = () => {
 const ForgotPassword = () => {
   return <View style={styles.container}>
       <View style={styles.topHead}>
-        <Text style={styles.mainHeading}>{"\n"}Forgot Password</Text>
+        <Text style={styles.mainHeading}>{"\n"}Token Input</Text>
       </View>
 
       <View style={styles.inputSection}>
       <View style={styles.newPassword}>
-        <Text style={styles.newpasswordText}>Enter your email for password reset.</Text>
+        <Text style={styles.newpasswordText}>Enter the validation token for password reset.</Text>
       </View>
       <View style={{
         top: -1,
@@ -21,7 +21,7 @@ const ForgotPassword = () => {
       }}>
         <Text style={{
           fontWeight: 100
-        }}>Email</Text>
+        }}>Token</Text>
         <Input placeholder="Enter"></Input>
       </View>
       
