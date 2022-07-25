@@ -51,7 +51,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
       position: "absolute",
       width: 197,
       height: 134
-    }}></ImageBackground><Pressable onPress={() => navigation.navigate(" Onboarding 1Copy1")}><View style={{
+    }}></ImageBackground><Pressable onPress={() => navigation.navigate("Onboarding1copy1")}><View style={{
         left: 0,
         top: 175,
         position: "absolute",
