@@ -1,6 +1,6 @@
 import { Pressable } from "react-native";
 import React from "react";
-import { Text, ScrollView, View, Image, StyleSheet, TextInput, TouchableHighlight, ImageBackground } from "react-native";
+import { Text, ScrollView, View, Image, StyleSheet, TextInput, ImageBackground } from "react-native";
 
 const pressed = ({
   navigation
@@ -45,9 +45,7 @@ const Signup = ({
           
           <Input placeholder='Type your password' />
         </View>
-        <Pressable onPress={({
-        navigation
-      }) => navigation.navigate("Updatepasswordcopy1")}><Text style={{
+        <Pressable onPress={() => navigation.navigate("Updatepasswordcopy1")}><Text style={{
           textAlign: "right",
           left: 0,
           top: 92,
@@ -59,12 +57,12 @@ const Signup = ({
         </View>
         <View style={styles.footerContainer}>
         <Text style={styles.footerText}>Don't have an account?</Text>
-          <Pressable onPress={() => navigation.navigate("Signupscreen")}><Text style={{
-            left: 132,
-            top: 0,
-            width: 37,
-            height: 32
-          }}>Sign up</Text></Pressable>
+          <Text style={{
+          left: 132,
+          top: 0,
+          width: 37,
+          height: 32
+        }}>Sign up</Text>
       </View>
         <View style={styles.orContainer}>
           <View style={styles.line} />
@@ -173,18 +171,16 @@ const styles = StyleSheet.create({
 export default Signup;
 
 const Button = props => {
-  return <TouchableHighlight onPress={props.onPress} underlayColor='#DDDDDD'>
-      <View style={[btnStyles.button, {
-      backgroundColor: props.backgroundColor ? props.backgroundColor : "#000000",
-      height: props.height ? props.height : 25,
-      borderWidth: props.borderWidth ? props.borderWidth : 0,
-      borderColor: props.borderColor ? props.borderColor : "#000000"
-    }]}>
+  return <View style={[btnStyles.button, {
+    backgroundColor: props.backgroundColor ? props.backgroundColor : "#637976",
+    height: props.height ? props.height : 25,
+    borderWidth: props.borderWidth ? props.borderWidth : 0,
+    borderColor: props.borderColor ? props.borderColor : "#000000"
+  }]}>
         <Text style={[btnStyles.text, {
-        color: props.color ? props.color : "#ffffff"
-      }]}>{props.children}</Text>
-      </View>
-    </TouchableHighlight>;
+      color: props.color ? props.color : "#ffffff"
+    }]}>{props.children}</Text>
+      </View>;
 };
 
 const btnStyles = StyleSheet.create({
