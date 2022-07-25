@@ -1,9 +1,12 @@
+import { Pressable } from "react-native";
 import { Text } from "react-native";
 import { ImageBackground } from "react-native";
 import React from "react";
 import { View } from "react-native";
 
-const Untitled1 = () => {
+const Untitled1 = ({
+  navigation
+}) => {
   return <View style={{
     backgroundColor: "#ffffff",
     padding: 10,
@@ -47,16 +50,16 @@ const Untitled1 = () => {
       position: "absolute",
       width: 197,
       height: 134
-    }}></ImageBackground><View style={{
-      left: 15,
-      top: 184,
-      position: "absolute",
-      height: 39,
-      width: 172,
-      backgroundColor: "#637976",
-      borderRadius: 15,
-      color: "#777777"
-    }}></View><Text style={{
+    }}></ImageBackground><Pressable onPress={() => navigation.navigate(" Signup ScreenCopy1")}><View style={{
+        left: 15,
+        top: 184,
+        position: "absolute",
+        height: 39,
+        width: 172,
+        backgroundColor: "#637976",
+        borderRadius: 15,
+        color: "#777777"
+      }}></View></Pressable><Text style={{
       left: 38,
       top: 195,
       position: "absolute",
