@@ -39,7 +39,7 @@ const ForgotPassword = () => {
         left: -1
       }}>
         <Text style={{
-          fontWeight: 100
+          fontWeight: "100"
         }}>Email</Text>
         <Input placeholder="Type your email"></Input>
       </View>

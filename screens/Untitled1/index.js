@@ -30,7 +30,7 @@ const Untitled1 = ({
       lineHeight: 14,
       fontSize: 18,
       borderRadius: 0,
-      fontWeight: 700,
+      fontWeight: "700",
       textAlign: "center"
     }}>Lorem Ipsum is simply dummy text of the printing </Text><Text style={{
       left: 0,
@@ -69,7 +69,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
       lineHeight: 14,
       fontSize: 16,
       borderRadius: 0,
-      fontWeight: 700,
+      fontWeight: "700",
       color: "#ffffff"
     }}>Next</Text></View>;
 };
