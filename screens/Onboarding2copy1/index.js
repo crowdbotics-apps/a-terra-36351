@@ -50,7 +50,7 @@ const Untitled1 = ({
       position: "absolute",
       width: 197,
       height: 134
-    }}></ImageBackground><Pressable onPress={() => navigation.navigate(" Signup ScreenCopy1")}><View style={{
+    }}></ImageBackground><Pressable onPress={() => navigation.navigate("Signupscreencopy1")}><View style={{
         left: 6,
         top: 174,
         position: "absolute",
