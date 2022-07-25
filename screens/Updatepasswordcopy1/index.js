@@ -113,7 +113,7 @@ export default ForgotPassword;
 const Button = props => {
   return <TouchableHighlight onPress={props.onPress} underlayColor='#DDDDDD'>
       <Pressable onPress={() => navigation.navigate("Forgotpasswordcopy1")}><View style={[btnStyles.button, {
-        backgroundColor: props.backgroundColor ? props.backgroundColor : "#000000",
+        backgroundColor: props.backgroundColor ? props.backgroundColor : "#637976",
         height: props.height ? props.height : 30,
         borderWidth: props.borderWidth ? props.borderWidth : 0,
         borderColor: props.borderColor ? props.borderColor : "#000000"

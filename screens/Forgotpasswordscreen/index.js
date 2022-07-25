@@ -91,7 +91,7 @@ export default ForgotPassword;
 const Button = props => {
   return <TouchableHighlight onPress={props.onPress} underlayColor='#DDDDDD'>
       <View style={[btnStyles.button, {
-      backgroundColor: props.backgroundColor ? props.backgroundColor : "#000000",
+      backgroundColor: props.backgroundColor ? props.backgroundColor : "#637976",
       height: props.height ? props.height : 49,
       borderWidth: props.borderWidth ? props.borderWidth : 0,
       borderColor: props.borderColor ? props.borderColor : "#000000"
