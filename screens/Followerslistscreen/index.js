@@ -25,7 +25,7 @@ const FollowersList = params => {
           }}>
               <Input placeholder="Enter" />
             </View>
-            <Image source={require("./assets/search.png")} />
+            <Image source="" />
           </View>
         </View>
         <View>
@@ -87,7 +87,7 @@ const Follower = props => {
         <View style={[FollowerStyles.image, {
         backgroundColor: props.bgcolor
       }]}>
-          <Image source={require("./assets/edit.png")} />
+          <Image source="" />
         </View>
         <Text>{props.name}</Text>
       </View>
