@@ -35,12 +35,10 @@ const getNavigation = (modules, screens, initialRoute) => {
 
     const screenOptions = { headerShown: true };
 
-    console.log(routes);
-
     return (
       <NavigationContainer>
         <Stack.Navigator
-          initialRouteName={initialRoute}
+          initialRouteName="Onboarding"
           screenOptions={screenOptions}
         >
           {routes}
