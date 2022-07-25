@@ -51,8 +51,8 @@ const Untitled1 = ({
       width: 197,
       height: 134
     }}></ImageBackground><Pressable onPress={() => navigation.navigate(" Signup ScreenCopy1")}><View style={{
-        left: 15,
-        top: 184,
+        left: 6,
+        top: 174,
         position: "absolute",
         height: 39,
         width: 172,
