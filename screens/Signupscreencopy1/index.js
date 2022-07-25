@@ -181,18 +181,18 @@ const styles = StyleSheet.create({
 export default Signup;
 
 const Button = props => {
-  return <View style={[btnStyles.button, {
-    backgroundColor: props.backgroundColor ? props.backgroundColor : "#637976",
-    height: props.height ? props.height : 25,
-    borderWidth: props.borderWidth ? props.borderWidth : 0,
-    borderColor: props.borderColor ? props.borderColor : "#000000"
-  }]}>
-      <Text style={[btnStyles.text, {
-      color: props.color ? props.color : "#ffffff"
+  return <Pressable onPress={() => navigation.navigate("Followerslistscreen")}><View style={[btnStyles.button, {
+      backgroundColor: props.backgroundColor ? props.backgroundColor : "#637976",
+      height: props.height ? props.height : 25,
+      borderWidth: props.borderWidth ? props.borderWidth : 0,
+      borderColor: props.borderColor ? props.borderColor : "#000000"
     }]}>
+      <Text style={[btnStyles.text, {
+        color: props.color ? props.color : "#ffffff"
+      }]}>
         {props.children}
       </Text>
-    </View>;
+    </View></Pressable>;
 };
 
 const btnStyles = StyleSheet.create({
