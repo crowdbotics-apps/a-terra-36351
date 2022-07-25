@@ -45,7 +45,9 @@ const Signup = ({
           
           <Input placeholder='Type your password' />
         </View>
-        <Pressable onPress={() => navigation.navigate("Updatepasswordcopy1")}><Text style={{
+        <Pressable onPress={({
+        navigation
+      }) => navigation.navigate("Updatepasswordcopy1")}><Text style={{
           textAlign: "right",
           left: 0,
           top: 92,
@@ -57,12 +59,12 @@ const Signup = ({
         </View>
         <View style={styles.footerContainer}>
         <Text style={styles.footerText}>Don't have an account?</Text>
-          <Text style={{
-          left: 132,
-          top: 0,
-          width: 37,
-          height: 32
-        }}>Sign up</Text>
+          <Pressable onPress={() => navigation.navigate("Signupscreen")}><Text style={{
+            left: 132,
+            top: 0,
+            width: 37,
+            height: 32
+          }}>Sign up</Text></Pressable>
       </View>
         <View style={styles.orContainer}>
           <View style={styles.line} />

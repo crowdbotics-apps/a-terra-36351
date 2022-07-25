@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, TouchableOpacity, Image, StyleSheet, TextInput, TouchableHighlight } from "react-native";
+import { Text, View, TouchableOpacity, Image, StyleSheet, TextInput } from "react-native";
 
 const pressed = () => {
   console.log("pressed");
@@ -12,16 +12,19 @@ const Signup = () => {
       </View>
       <View>
         <View style={styles.emailContainer}>
-          <Text style={styles.mr10}>Email address</Text>
-          <Input placeholder='Email' />
+          <Input placeholder='Type store name' />
         </View>
-        <View style={styles.mb20}>
-          <Text style={styles.mr10}>Password</Text>
-          <Input placeholder='Enter' />
+        <View style={styles.emailContainer}>
+          <Input placeholder='Choose store category' />
         </View>
-        <View style={styles.mb20}>
-          <Text style={styles.mr10}>Confirm password</Text>
-          <Input placeholder='Enter' />
+        <View style={styles.emailContainer}>
+          <Input placeholder='Type email id' />
+        </View>
+          <View style={styles.emailContainer}>
+          <Input placeholder='Type password' />
+        </View>
+          <View style={styles.emailContainer}>
+          <Input placeholder='Confirm password' />
         </View>
 
         <View style={styles.loginContainer}>
@@ -34,13 +37,13 @@ const Signup = () => {
         </View>
         <View style={styles.imageContainer}>
           <View style={styles.iconContainer}>
-            <Image source={require("./assets/appleIcon.png")} style={styles.icon} />
+            <Image source="" style={styles.icon} />
           </View>
           <View style={styles.iconContainer}>
-            <Image source={require("./assets/googleIcon.png")} style={styles.icon} />
+            <Image source="" style={styles.icon} />
           </View>
           <View style={styles.iconContainer}>
-            <Image source={require("./assets/fbIcon.png")} style={styles.icon} />
+            <Image source="" style={styles.icon} />
           </View>
         </View>
       </View>
@@ -140,18 +143,16 @@ const styles = StyleSheet.create({
 export default Signup;
 
 const Button = props => {
-  return <TouchableHighlight onPress={props.onPress} underlayColor='#DDDDDD'>
-      <View style={[btnStyles.button, {
-      backgroundColor: props.backgroundColor ? props.backgroundColor : "#000000",
-      height: props.height ? props.height : 49,
-      borderWidth: props.borderWidth ? props.borderWidth : 0,
-      borderColor: props.borderColor ? props.borderColor : "#000000"
-    }]}>
+  return <View style={[btnStyles.button, {
+    backgroundColor: props.backgroundColor ? props.backgroundColor : "#637976",
+    height: props.height ? props.height : 30,
+    borderWidth: props.borderWidth ? props.borderWidth : 0,
+    borderColor: props.borderColor ? props.borderColor : "#000000"
+  }]}>
         <Text style={[btnStyles.text, {
-        color: props.color ? props.color : "#ffffff"
-      }]}>{props.children}</Text>
-      </View>
-    </TouchableHighlight>;
+      color: props.color ? props.color : "#ffffff"
+    }]}>{props.children}</Text>
+      </View>;
 };
 
 const btnStyles = StyleSheet.create({
@@ -177,7 +178,7 @@ const Input = props => {
 const textStyles = StyleSheet.create({
   input: {
     backgroundColor: "#fff",
-    height: 53,
+    height: 32,
     borderColor: "#C4C4C4",
     color: "#000",
     borderRadius: 10,
