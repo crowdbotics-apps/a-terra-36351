@@ -1,7 +1,10 @@
+import { Pressable } from "react-native";
 import * as React from 'react';
 import { Text, View, StyleSheet, TextInput, ImageBackground } from 'react-native';
 
-const pressed = () => {
+const pressed = ({
+  navigation
+}) => {
   console.log('pressed');
 };
 
@@ -105,18 +108,18 @@ const styles = StyleSheet.create({
 export default ForgotPassword;
 
 const Button = props => {
-  return <View style={[btnStyles.button, {
-    backgroundColor: props.backgroundColor ? props.backgroundColor : '#637976',
-    height: props.height ? props.height : 30,
-    borderWidth: props.borderWidth ? props.borderWidth : 0,
-    borderColor: props.borderColor ? props.borderColor : '#000000'
-  }]}>
-      <Text style={[btnStyles.text, {
-      color: props.color ? props.color : '#ffffff'
+  return <Pressable onPress={() => navigation.navigate("Untitled2")}><View style={[btnStyles.button, {
+      backgroundColor: props.backgroundColor ? props.backgroundColor : '#637976',
+      height: props.height ? props.height : 30,
+      borderWidth: props.borderWidth ? props.borderWidth : 0,
+      borderColor: props.borderColor ? props.borderColor : '#000000'
     }]}>
+      <Text style={[btnStyles.text, {
+        color: props.color ? props.color : '#ffffff'
+      }]}>
         {props.children}
       </Text>
-    </View>;
+    </View></Pressable>;
 };
 
 const btnStyles = StyleSheet.create({
