@@ -58,11 +58,13 @@ const Signup = ({
             </Text>
           </Pressable>
           <View style={styles.loginContainer}>
-            <Button onPress={pressed}>Sign up</Button>
+            <Button onPress={pressed}>Sign In</Button>
           </View>
           <View style={styles.footerContainer}>
             <Text style={styles.footerText}>Don't have an account?</Text>
-            <Pressable onPress={() => navigation.navigate("Signupscreen")}>
+            <Pressable onPress={({
+            navigation
+          }) => navigation.navigate("Signupscreen")}>
               <Text style={{
               left: 132,
               top: 0,
@@ -181,7 +183,7 @@ const styles = StyleSheet.create({
 export default Signup;
 
 const Button = props => {
-  return <Pressable onPress={() => navigation.navigate("Followerslistscreen")}><View style={[btnStyles.button, {
+  return <Pressable onPress={() => navigation.navigate("Untitled2")}><View style={[btnStyles.button, {
       backgroundColor: props.backgroundColor ? props.backgroundColor : "#637976",
       height: props.height ? props.height : 25,
       borderWidth: props.borderWidth ? props.borderWidth : 0,
