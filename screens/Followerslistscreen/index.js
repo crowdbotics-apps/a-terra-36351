@@ -8,7 +8,15 @@ const FollowersList = params => {
         left: 0,
         top: 0
       }}>
-          <Text style={styles.searchText}>Search for product</Text>
+          <Text style={{}}>Hey!</Text>
+          <Text style={{
+          left: 0,
+          top: 16,
+          width: 189,
+          height: 20
+        }}><Text style={{
+            color: "#637976"
+          }}>Welcome</Text> Back!</Text>
           <View style={{
           borderWidth: 1,
           borderRadius: 10,
@@ -18,21 +26,74 @@ const FollowersList = params => {
           left: 25,
           top: 0,
           width: 149,
-          height: 41
+          height: 30
         }}>
             <View style={{
             width: "90%"
           }}>
-              <Input placeholder="Enter" />
+              <Input placeholder="Search here..." />
             </View>
             <Image source="" />
           </View>
         </View>
         <View>
-          <Text style={styles.text}>4513 Products found</Text>
+          
         </View>
-        <View style={styles.frequently}>
-          <Text style={styles.frequentlyText}>Frequently</Text>
+        <View style={{
+        height: 55,
+        borderColor: "#000000",
+        left: 0
+      }}>
+          <View style={{
+          position: "absolute",
+          height: 50,
+          width: 47,
+          left: 10,
+          top: 5,
+          backgroundColor: "#637976",
+          borderRadius: 6
+        }}><Text style={{
+            position: "absolute",
+            fontSize: 10,
+            textAlign: "center",
+            top: 28
+          }}>Home Assists</Text></View>
+          <View style={{
+          position: "absolute",
+          height: 50,
+          width: 45,
+          borderRadius: 6,
+          left: 121,
+          top: 5,
+          borderWidth: 1,
+          borderColor: "#acabab"
+        }}><Text style={{
+            position: "absolute",
+            textAlign: "center",
+            top: 30,
+            fontSize: 10,
+            left: -1,
+            width: 42,
+            height: 14
+          }}>Footware</Text></View>
+          <View style={{
+          position: "absolute",
+          height: 50,
+          width: 46,
+          borderRadius: 6,
+          left: 68,
+          top: 5,
+          borderWidth: 1,
+          borderColor: "#acabab"
+        }}><Text style={{
+            position: "absolute",
+            textAlign: "center",
+            top: 34,
+            fontSize: 10,
+            left: 3,
+            width: 36,
+            height: 15
+          }}>Bags</Text></View>
         </View>
         <View>
           <Follower name='cody' bgcolor='#D9DADD' />
@@ -122,7 +183,12 @@ const FollowerStyles = StyleSheet.create({
 
 const Input = props => {
   return <View>
-      <TextInput style={textStyles.input} placeholder={props.placeholder} value={props.value} onChangeText={num => props.setValue(num)} placeholderTextColor='#ddd' editable={props.editable !== false} />
+      <TextInput style={{
+      left: 0,
+      top: 0,
+      width: 132,
+      height: 32
+    }} placeholder={props.placeholder} value={props.value} onChangeText={num => props.setValue(num)} placeholderTextColor='#ddd' editable={props.editable !== false} />
       {props.errorText ? <Text style={textStyles.error}>{props.errorText}</Text> : null}
     </View>;
 };
