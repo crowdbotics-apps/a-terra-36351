@@ -112,7 +112,17 @@ const Untitled3Copy1 = () => {
       fontSize: 9,
       borderRadius: 0,
       textAlign: "right"
-    }}>4.5 (120 Reviews)</Text></View>;
+    }}>4.5 (120 Reviews)</Text><Text style={{
+      left: 8,
+      top: 312,
+      position: "absolute",
+      width: 46,
+      height: 19,
+      lineHeight: 14,
+      fontSize: 15,
+      borderRadius: 0,
+      fontWeight: 700
+    }}>$12.5</Text></View>;
 };
 
 export default Untitled3Copy1;
