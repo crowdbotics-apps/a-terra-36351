@@ -30,7 +30,7 @@ const Untitled1 = ({
       lineHeight: 14,
       fontSize: 18,
       borderRadius: 0,
-      fontWeight: "700",
+      fontWeight: "400",
       textAlign: "center"
     }}>Dummy Text</Text><Text style={{
       left: 0,
