@@ -64,17 +64,17 @@ const Untitled3Copy1 = () => {
       borderRadius: 0,
       fontWeight: 700
     }}>T-shirts</Text><View style={{
-      left: 53,
+      left: 70,
       top: 306,
       position: "absolute",
       height: 28,
-      width: 126,
+      width: 109,
       backgroundColor: "#637976",
       borderRadius: 7,
       color: "#777777"
     }}></View><Text style={{
-      left: 108,
-      top: 314,
+      left: 95,
+      top: 313,
       position: "absolute",
       width: 69,
       height: 17,
