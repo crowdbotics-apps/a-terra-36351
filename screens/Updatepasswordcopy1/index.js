@@ -90,17 +90,18 @@ const styles = StyleSheet.create({
     height: 120
   },
   fUqIzXoW: {
-    width: 136,
-    height: 100,
+    width: 360,
+    height: 120,
     position: "absolute",
-    left: 21,
-    top: 3
+    left: -22,
+    top: -17
   },
   oLMoJFdm: {
     width: 96,
     height: 102,
-    left: 37,
-    top: 0
+    left: 120,
+    top: 1,
+    position: "absolute"
   },
   VBPKiRMQ: {
     top: -1,

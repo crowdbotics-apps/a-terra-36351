@@ -93,17 +93,18 @@ const styles = StyleSheet.create({
     height: 120
   },
   ScuxBPhv: {
-    width: 136,
-    height: 100,
+    width: 359,
+    height: 123,
     position: "absolute",
-    left: 21,
-    top: 3
+    left: -16,
+    top: -20
   },
   KwkKbbGz: {
     width: 96,
     height: 102,
-    left: 37,
-    top: 0
+    left: 127,
+    top: 0,
+    position: "absolute"
   },
   XxwHXTkS: {
     top: -1,

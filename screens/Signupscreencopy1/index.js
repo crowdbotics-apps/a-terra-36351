@@ -155,17 +155,18 @@ const styles = StyleSheet.create({
     height: 120
   },
   drbZUTSb: {
-    width: 136,
-    height: 100,
+    width: 364,
+    height: 126,
     position: "absolute",
-    left: 21,
-    top: 3
+    left: -15,
+    top: -23
   },
   ZzToHAaM: {
     width: 96,
     height: 102,
-    left: 37,
-    top: 0
+    left: 128,
+    top: 1,
+    position: "absolute"
   },
   kYbujXLr: {
     marginBottom: 10

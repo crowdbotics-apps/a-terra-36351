@@ -95,17 +95,18 @@ const styles = StyleSheet.create({
     height: 120
   },
   DOcUVFwJ: {
-    width: 136,
-    height: 100,
+    width: 355,
+    height: 121,
     position: "absolute",
-    left: 21,
-    top: 3
+    left: -20,
+    top: -18
   },
   McMvqjpx: {
     width: 96,
     height: 102,
-    left: 37,
-    top: 0
+    left: 129,
+    top: 1,
+    position: "absolute"
   }
 });
 export default ForgotPassword;

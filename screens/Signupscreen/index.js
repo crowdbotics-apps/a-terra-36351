@@ -149,17 +149,18 @@ const styles = StyleSheet.create({
     height: 120
   },
   DfWUijjw: {
-    width: 136,
-    height: 100,
+    width: 359,
+    height: 124,
     position: "absolute",
-    left: 21,
-    top: 3
+    left: -19,
+    top: -21
   },
   IFVsvxBg: {
     width: 96,
     height: 102,
-    left: 37,
-    top: 0
+    left: 114,
+    top: 0,
+    position: "absolute"
   }
 });
 export default Signup;
