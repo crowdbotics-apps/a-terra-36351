@@ -56,7 +56,7 @@ const _styles = StyleSheet.create({
     lineHeight: 14,
     fontSize: 18,
     borderRadius: 0,
-    fontWeight: 700
+    fontWeight: "700"
   },
   qOCDRuAj: {
     left: 8,
@@ -98,7 +98,7 @@ const _styles = StyleSheet.create({
     lineHeight: 14,
     fontSize: 12,
     borderRadius: 0,
-    fontWeight: 700
+    fontWeight: "700"
   },
   GUbrWFJI: {
     left: 213,
@@ -141,6 +141,6 @@ const _styles = StyleSheet.create({
     lineHeight: 14,
     fontSize: 18,
     borderRadius: 0,
-    fontWeight: 700
+    fontWeight: "700"
   }
 });

@@ -79,7 +79,7 @@ const _styles = StyleSheet.create({
     lineHeight: 14,
     fontSize: 16,
     borderRadius: 0,
-    fontWeight: 700
+    fontWeight: "700"
   },
   qgdGPCip: {
     left: 131,
@@ -112,7 +112,7 @@ const _styles = StyleSheet.create({
     lineHeight: 14,
     fontSize: 14,
     borderRadius: 0,
-    fontWeight: 400,
+    fontWeight: "400",
     color: "#7e7e7e",
     textAlign: "right"
   },

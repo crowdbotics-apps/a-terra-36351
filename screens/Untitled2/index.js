@@ -98,7 +98,7 @@ const _styles = StyleSheet.create({
     padding: 10,
     position: 'relative',
     height: '100%',
-    FontFamily: 'Roboto'
+    fontFamily: 'Roboto'
   },
   iZNORUSg: {
     width: 357,
@@ -146,7 +146,7 @@ const _styles = StyleSheet.create({
     width: 20,
     height: 20,
     backgroundColor: '#ffe1e1',
-    borderRadius: '50%'
+    borderRadius: 50
   },
   LNUdWLJK: {
     width: 15,
@@ -195,7 +195,7 @@ const _styles = StyleSheet.create({
     width: 33,
     height: 33,
     backgroundColor: '#ffe1e1',
-    borderRadius: '50%',
+    borderRadius: 50,
     left: 0,
     top: 0
   },
@@ -242,7 +242,7 @@ const _styles = StyleSheet.create({
     width: 20,
     height: 20,
     backgroundColor: '#ffe1e1',
-    borderRadius: '50%'
+    borderRadius: 50,
   },
   qcYPhZGd: {
     width: 15,
@@ -287,7 +287,7 @@ const _styles = StyleSheet.create({
     width: 20,
     height: 20,
     backgroundColor: '#ffe1e1',
-    borderRadius: '50%'
+    borderRadius: 50
   },
   IhFWSSzk: {
     width: 15,
@@ -368,7 +368,7 @@ const _styles = StyleSheet.create({
     width: 33,
     height: 33,
     backgroundColor: "#ffe1e1",
-    borderRadius: "50%",
+    borderRadius: 50,
     left: 0,
     top: 0
   },
@@ -419,7 +419,7 @@ const _styles = StyleSheet.create({
     width: 33,
     height: 33,
     backgroundColor: "#ffe1e1",
-    borderRadius: "50%",
+    borderRadius: 50,
     left: 0,
     top: 0
   },
@@ -470,7 +470,7 @@ const _styles = StyleSheet.create({
     width: 33,
     height: 33,
     backgroundColor: "#ffe1e1",
-    borderRadius: "50%",
+    borderRadius: 50,
     left: 0,
     top: 0
   },
@@ -521,7 +521,7 @@ const _styles = StyleSheet.create({
     width: 33,
     height: 33,
     backgroundColor: "#ffe1e1",
-    borderRadius: "50%",
+    borderRadius: 50,
     left: 0,
     top: 0
   },
